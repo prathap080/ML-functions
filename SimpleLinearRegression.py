@@ -30,8 +30,8 @@ def model_SLR(data_file):
         lr_details[column] = {'Correlation': round(correlation[column],3), 'Coefficient': round(lm.coef_[0], 3), 'Intercept': round(lm.intercept_, 3), 'R-Square_train': round(r2_train, 3), 'R-Square_test': round(r2_test, 3)}
     return lr_details
 		
-	if __name__ = "__main__":
-		model_SLR('Salary_Data.csv')
+if __name__ = "__main__":
+    model_SLR('Salary_Data.csv')
 	'''
 	Output:
 	
